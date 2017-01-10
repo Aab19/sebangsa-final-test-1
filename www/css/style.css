@@ -3,22 +3,104 @@ body {
   margin: 0; }
 
 .channels {
+  height: 100%;
   width: 20%;
-  background-color: #4D394B;
-  height: 100%; }
+  background-color: #4D394B; }
+
+.channels__list {
+  color: #AB9A9B; }
+
+.channels__mini-team {
+  color: #AB9A9B; }
+
+.channels__team-name {
+  color: #FFF; }
 
 .chat {
-  width: 64.5%;
+  width: 72%;
   background-color: #fefefe;
   height: 100%;
   border: 1px solid #eaeaea; }
 
+.chat__area {
+  width: 100%;
+  height: 63px;
+  border: 2px solid #0e0e0e;
+  padding: 5px; }
+
+.chat__body {
+  padding: 15px; }
+
+.chat__channel-name {
+  margin-left: 15px;
+  margin-bottom: 10px; }
+
+.chat__head {
+  width: 100%;
+  height: 60px;
+  padding-left: -25px;
+  border-bottom: 2px solid #f0f0f0;
+  text-align: left; }
+
+span {
+  color: #e0e0e0; }
+
+.chat__icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #e0e0e0;
+  text-decoration: none; }
+
+.chat__icon:hover {
+  color: #4C9689; }
+
+.chat__icon_right {
+  float: right;
+  margin-top: -35px; }
+
+.chat__icon_lg {
+  font-size: 2.5em; }
+
+.chat__message {
+  display: flex; }
+
+.chat__textarea {
+  margin-left: 10px;
+  margin-top: -10px; }
+
+.chat__thumb {
+  border-radius: 15px;
+  width: 7%;
+  height: 7%; }
+
+.chat__wrapper {
+  padding-bottom: 25px; }
+
 .container {
   display: flex;
-  width: 100%;
-  height: 500px; }
+  height: 653px;
+  width: 100%; }
 
 .team {
-  width: 15%;
-  background-color: black;
-  height: 100%; }
+  height: 100%;
+  width: 8%;
+  background-color: #0d090c; }
+
+.team__item {
+  height: 100%;
+  width: 15%; }
+
+.team__link {
+  height: 100%;
+  width: 15%; }
+
+.team__list {
+  height: 100%;
+  width: 15%; }
+
+.team__thumb {
+  height: 100%;
+  width: 15%; }
+
+.team__wrapper {
+  width: 15%; }

@@ -12,33 +12,18 @@ mixin channel-item(link, name)
 mixin chat-message(src, alt, time, text)
 	.chat__message
 		img.chat__thumb(src=src,alt=alt)
-		p.chat__time= time
-		p.chat__text= text
+		.chat__textarea
+			a Kljabrik 
+			p.chat__time= time
+			
+			p.chat__text= text
 
 doctype
 html(lang="en")
 	head
 		title Final Test - Slack Clone
-<<<<<<< HEAD
 		link(rel="stylesheet", href="css/style.css")
-	body
-		.container
-			section.team
-				//- scroll down menu
-				.team__wrapper 
-					ul.team__list
-						//- action clik active class
-						+team-item('#', '#', 'Kalasan') 
-						+team-item('#', '#', 'Baciro')
-						+team-item('#', '#', 'Elmo')
-			section.channels
-				//- scroll down menu
-				.channels__wrapper 
-					a
-						//- action team pop-up menu
-						h3.channels__team-name 
-=======
-		link(rel='stylesheet' href='css/style.css')
+		link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 	body
 		.container
 			section.team
@@ -54,36 +39,31 @@ html(lang="en")
 				.channels__wrapper
 					a
 						// action team pop-up menu
-						h3.channels__team-name
->>>>>>> c5511cc205794732c75c4d4a0acfebe758b3d777
+						h3.channels__team-name Kalasan
 						a.icon.icon_arrow-down
-					p.channels_mini-team
+					p.channels__mini-team Klanjabrik
 
 					ul.channels__list
 						//- action clik active class
+					ul.channels__list Channels
 						a.icon.icon_plus-circle
-<<<<<<< HEAD
 						+channel-item('#', 'IOS') 
-						+channel-item('#', 'HRD')
-			//- scroll down menu
-			section.chat 
-=======
-						// action clik active class
-						+channel-item('#', 'IOS')
 						+channel-item('#', 'HRD')
 			// scroll down menu
 			section.chat
->>>>>>> c5511cc205794732c75c4d4a0acfebe758b3d777
 				.chat__wrapper
 					.chat__head
-						h2.chat__channel-name
-						a.icon.icon_star
-						p |
-						a.icon.icon_user 48
+						h2.chat__channel-name #IOS
+						a.icon.chat__icon(href="#")
+							i.fa.fa-star  
+						span |
+						a.icon.chat__icon(href="#")
+							i.fa.fa-user  48
 						// action click pop-up men
-						a.icon.icon_option-vertical.icon_right
+						a.icon.chat__icon.chat__icon_lg.chat__icon_right(href="#")
+							i.fa.fa-ellipsis-v
 					.chat__body
 						.chat__area
-							+chat-message('#', '#', '11:13 AM', 'Hai apa kabar semua?')
-							+chat-message('#', '#', '11:13 AM', 'Baik Alhamdulillah')
-						input.chat__input.chat__input_bottom.icon.icon_plus(placeholder='tulis pesan')
+							+chat-message('https://api.adorable.io/avatars/60/bro.png', '#', '11:13 AM', 'Hai apa kabar semua?')
+							+chat-message('https://api.adorable.io/avatars/60/oke.png', '#', '11:13 AM', 'Baik Alhamdulillah')
+					input.chat__input.chat__input_bottom.icon.icon_plus(placeholder='tulis pesan')

@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <title>Final Test - Slack Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
       <section class="team">
-        <div class="team__wrapper">//- scroll down menu
+        <!-- scroll down menu-->
+        <div class="team__wrapper">
           <ul class="team__list">
+            <!-- action clik active class-->
             <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="#" alt="Kalasan"/></a></li>
             <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="#" alt="Baciro"/></a></li>
             <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="#" alt="Elmo"/></a></li>
@@ -15,34 +19,42 @@
         </div>
       </section>
       <section class="channels">
-        <div class="channels__wrapper">//- scroll down menu<a>
-            <h3 class="channels__team-name">//- action team pop-up menu</h3><a class="icon icon_arrow-down"></a></a>
-          <p class="channels_mini-team"></p>
-          <ul class="channels__list"><a class="icon icon_plus-circle"></a>
+        <!-- scroll down menu-->
+        <div class="channels__wrapper"><a>
+            <!-- action team pop-up menu-->
+            <h3 class="channels__team-name">Kalasan</h3><a class="icon icon_arrow-down"></a></a>
+          <p class="channels__mini-team">Klanjabrik</p>
+          <ul class="channels__list"></ul>
+          <ul class="channels__list">Channels<a class="icon icon_plus-circle"></a>
             <li class="channels__item">#<a class="channels__link" href="#">IOS</a></li>
             <li class="channels__item">#<a class="channels__link" href="#">HRD</a></li>
           </ul>
         </div>
       </section>
-      <section class="chat">//- scroll down menu
+      <!-- scroll down menu-->
+      <section class="chat">
         <div class="chat__wrapper">
           <div class="chat__head">
-            <h2 class="chat__channel-name"></h2><a class="icon icon_star"></a>
-            <p>|</p><a class="icon icon_user">48</a><a class="icon icon_option-vertical icon_right"></a>
+            <h2 class="chat__channel-name">#IOS</h2><a class="icon chat__icon" href="#"><i class="fa fa-star"> </i></a><span>|</span><a class="icon chat__icon" href="#"><i class="fa fa-user"> 48</i></a>
+            <!-- action click pop-up men--><a class="icon chat__icon chat__icon_lg chat__icon_right" href="#"><i class="fa fa-ellipsis-v"></i></a>
           </div>
           <div class="chat__body">
             <div class="chat__area">
-              <div class="chat__message"><img class="chat__thumb" src="#" alt="#"/>
-                <p class="chat__time">11:13 AM</p>
-                <p class="chat__text">Hai apa kabar semua?</p>
+              <div class="chat__message"><img class="chat__thumb" src="https://api.adorable.io/avatars/60/bro.png" alt="#"/>
+                <div class="chat__textarea"><a>Kljabrik </a>
+                  <p class="chat__time">11:13 AM</p>
+                  <p class="chat__text">Hai apa kabar semua?</p>
+                </div>
               </div>
-              <div class="chat__message"><img class="chat__thumb" src="#" alt="#"/>
-                <p class="chat__time">11:13 AM</p>
-                <p class="chat__text">Baik Alhamdulillah</p>
+              <div class="chat__message"><img class="chat__thumb" src="https://api.adorable.io/avatars/60/oke.png" alt="#"/>
+                <div class="chat__textarea"><a>Kljabrik </a>
+                  <p class="chat__time">11:13 AM</p>
+                  <p class="chat__text">Baik Alhamdulillah</p>
+                </div>
               </div>
             </div>
-            <input class="chat__input chat__input_bottom icon icon_plus" placeholder="tulis pesan">
           </div>
+          <input class="chat__input chat__input_bottom icon icon_plus" placeholder="tulis pesan">
         </div>
       </section>
     </div>
