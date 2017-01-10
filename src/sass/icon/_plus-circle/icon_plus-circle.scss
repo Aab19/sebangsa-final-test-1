@@ -1,0 +1,9 @@
+@import "src/sass/variable/variable";
+
+.icon_plus-circle {
+    color: $color;
+    :hover {
+      color: $color2;
+    }
+    margin-left: 90px;
+}

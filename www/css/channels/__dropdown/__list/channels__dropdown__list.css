@@ -1,0 +1,12 @@
+/* Dropdown Link */
+.channels__dropdown_list {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* Dropdown button on hover & focus */
+.channels__dropdown_list:hover, .channels__dropdown_list:focus {
+  background-color: #3e8e41; }

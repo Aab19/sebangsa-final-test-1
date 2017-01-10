@@ -1,0 +1,10 @@
+@import "src/sass/variable/variable";
+
+.channels__item {
+  margin-left: 5px;
+  width: 100px;
+  li:hover {
+    text-color: $color;
+    background-color: red;
+  }
+}

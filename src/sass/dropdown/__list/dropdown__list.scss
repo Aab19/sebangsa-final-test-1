@@ -1,0 +1,13 @@
+@import "src/sass/variable/variable";
+/* Dropdown Button */
+.dropdown__list {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropdown__list:hover, .dropdown__list:focus {
+}

@@ -1,0 +1,11 @@
+@import "src/sass/variable/variable";
+
+.channels__link {
+    color: inherit;
+    text-decoration: none;
+    li:hover {
+      width: 300px;
+      text-color: $color;
+      background-color: $color2;
+    }
+}

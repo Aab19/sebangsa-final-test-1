@@ -11,8 +11,17 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-css-image-dimensions": "^1.1.5",
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulilal/sebangsa-final-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ulilal/sebangsa-final-test/issues"
+  },
+  "homepage": "https://github.com/ulilal/sebangsa-final-test#readme",
+  "dependencies": {
   }
 }

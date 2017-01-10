@@ -2,33 +2,56 @@
 <html lang="en">
   <head>
     <title>Final Test - Slack Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="css/dropdown/__id/dropdown__id.js"></script>
   </head>
   <body>
     <div class="container">
       <section class="team">
-        <div class="team__wrapper">//- scroll down menu
+        <!-- scroll down menu-->
+        <div class="team__wrapper">
           <ul class="team__list">
-            <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="#" alt="Kalasan"/></a></li>
-            <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="#" alt="Baciro"/></a></li>
-            <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="#" alt="Elmo"/></a></li>
+            <!-- action clik active class-->
+            <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="https://api.adorable.io/avatars/72/team-icon" alt="Kalasan"/></a></li><br>
+            <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="https://api.adorable.io/avatars/72/team-icon" alt="Baciro"/></a></li><br>
+            <li class="team__item"><a class="team__link" href="#"><img class="team__thumb" src="https://api.adorable.io/avatars/72/team-icon" alt="Elmo"/></a></li>
           </ul>
         </div>
       </section>
       <section class="channels">
-        <div class="channels__wrapper">//- scroll down menu<a>
-            <h3 class="channels__team-name">//- action team pop-up menu</h3><a class="icon icon_arrow-down"></a></a>
-          <p class="channels_mini-team"></p>
-          <ul class="channels__list"><a class="icon icon_plus-circle"></a>
-            <li class="channels__item">#<a class="channels__link" href="#">IOS</a></li>
-            <li class="channels__item">#<a class="channels__link" href="#">HRD</a></li>
+        <!-- scroll down menu-->
+        <div class="channels__wrapper">
+          <div class="dropdown">
+            <div class="dropdown__content" id="dropdown__id">
+              <div class="dropdown__wrapper"><img class="dropdown__thumb" src="https://api.adorable.io/avatars/72/team-icon" alt="Kalasan"/>
+                <div class="dropdown__user">
+                  <p>Klanjabrik</p>
+                  <p class="dropdown__name">@klanjabrik</p>
+                </div>
+              </div><a class="dropdown_center" href="#">Profil &amp; Account</a><a class="dropdown_center" href="#">Preferences</a>
+              <div class="dropdown_divider"></div><a class="dropdown_center" href="#">Preferences</a>
+            </div>
+            <!-- action team pop-up menu-->
+            <h3 class="channels__team-name dropdown_list dropdown__list" onClick="myFunction()">Kalasan<a class="icon icon_arrow-down"><i class="fa fa-caret-down"></i></a>
+              <p class="channels__mini-team">Klanjabrik</p>
+            </h3>
+          </div>
+          <ul class="channels__list">Channels (3)<a class="icon icon_plus-circle" href="#"><i class="fa fa-plus-circle"></i></a>
+            <!-- action clik active class-->
+            <li class="channels__item">#<a class="channels__link" href="#"> IOS</a></li>
+            <li class="channels__item">#<a class="channels__link" href="#"> HRD</a></li>
           </ul>
         </div>
       </section>
-      <section class="chat">//- scroll down menu
+      <!-- scroll down menu-->
+      <section class="chat">
         <div class="chat__wrapper">
           <div class="chat__head">
             <h2 class="chat__channel-name"></h2><a class="icon icon_star"></a>
-            <p>|</p><a class="icon icon_user">48</a><a class="icon icon_option-vertical icon_right"></a>
+            <p>|</p><a class="icon icon_user">48</a>
+            <!-- action click pop-up men--><a class="icon icon_option-vertical icon_right"></a>
           </div>
           <div class="chat__body">
             <div class="chat__area">

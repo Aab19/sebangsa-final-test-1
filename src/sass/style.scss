@@ -1,7 +1,9 @@
 body {
   width: 100%;
   margin: 0;
+  font-family: Helvetica Neue, Helvetica, Segoe UI, Tahoma, Arial, sans-serif;
 }
+
 
 @import "variable/variable";
 @import "channels/channels";
@@ -23,6 +25,15 @@ body {
 @import "chat/__time/chat__time";
 @import "chat/__wrapper/chat__wrapper";
 @import "container/container";
+@import "dropdown/dropdown";
+@import "dropdown/__content/dropdown__content";
+@import "dropdown/__list/dropdown__list";
+@import "dropdown/_center/dropdown_center";
+@import "dropdown/_divider/dropdown_divider";
+@import "dropdown/__thumb/dropdown__thumb";
+@import "dropdown/__user/dropdown__user";
+@import "dropdown/__wrapper/dropdown__wrapper";
+@import "dropdown/__name/dropdown__name";
 @import "icon/icon";
 @import "icon/_arrow-down/icon_arrow-down";
 @import "icon/_option-vertical/icon_option-vertical";
