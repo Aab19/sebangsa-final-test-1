@@ -1,0 +1,15 @@
+@import "src/sass/variable/variable";
+
+.channels__hover {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-collapse: separate;
+  &:active {
+    background-color: $color-active;
+    color:$color2;
+  }
+  &:hover {
+    background-color: $bg-color3;
+  }
+
+}

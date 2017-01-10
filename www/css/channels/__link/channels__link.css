@@ -1,0 +1,6 @@
+.channels__link {
+  color: inherit;
+  text-decoration: none; }
+  .channels__link a:hover {
+    text-color: #AB9A9B;
+    background-color: red; }

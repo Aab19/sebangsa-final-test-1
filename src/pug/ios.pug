@@ -1,13 +1,22 @@
--var avatar = ['']
-
 mixin team-item(link, src, alt)
 	li.team__item
 		a.team__link(href=link)
 			img.team__thumb(src=src, alt=alt)
 
 mixin channel-item(link, name)
-	li.channels__item #
-		a.channels__link(href=link)= name
+	.channels__hover
+		li.channels__item #
+			a.channels__link(href=link)= name
+
+mixin dropdown-team(link, src, alt)
+	.dropdown__wrapper
+		img.dropdown__thumb(src=src, alt=alt)
+		.dropdown__user
+			p Klanjabrik
+			p.dropdown__name @klanjabrik
+
+mixin dropdown-content(link, list)
+		a(href=link class='dropdown_center')= list
 
 mixin chat-message(user, src, alt, time, text)
 	.chat__message
@@ -22,9 +31,10 @@ doctype
 html(lang="en")
 	head
 		title Final Test - Slack Clone
-		link(rel="stylesheet", href="css/style.css")
+		link(rel='stylesheet' href='css/style.css')
 		link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
-		
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		script(src='css/dropdown/__id/dropdown__id.js')
 	body
 		.container
 			section.team
@@ -32,23 +42,55 @@ html(lang="en")
 				.team__wrapper
 					ul.team__list
 						// action clik active class
-						+team-item('#', '#', 'Kalasan')
-						+team-item('#', '#', 'Baciro')
-						+team-item('#', '#', 'Elmo')
+						+team-item('#', 'https://api.adorable.io/avatars/72/team-icon', 'Kalasan')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon2', 'Baciro')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
 			section.channels
 				// scroll down menu
 				.channels__wrapper
-					a
+					.dropdown
+						#dropdown__id.dropdown__content
+							+dropdown-team('#', 'https://api.adorable.io/avatars/72/team-icon', 'Kalasan')
+							+dropdown-content('#','Profil & Account')
+							+dropdown-content('#','Preferences')
+							.dropdown_divider
+							+dropdown-content('#','Preferences')
 						// action team pop-up menu
-						h3.channels__team-name Kalasan
-						a.icon.icon_arrow-down
-					p.channels__mini-team Klanjabrik
+						h2.channels__team-name.dropdown_list(
+							onClick='myFunction()'
+							class='dropdown__list'
+							) Kalasan
+							a.icon.icon_arrow-down
+								i.fa.fa-caret-down
+							p.channels__mini-team Klanjabrik
 
-					ul.channels__list
-						//- action clik active class
-					ul.channels__list Channels
-						a.icon.icon_plus-circle
-						+channel-item('#', 'IOS') 
+					ul.channels__list Channels (3)
+						a.icon.icon_plus-circle(href='#')
+							i.fa.fa-plus-circle
+						// action clik active class
+						+channel-item('#', 'IOS')
 						+channel-item('#', 'HRD')
 			// scroll down menu
 			section.chat

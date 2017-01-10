@@ -4,4 +4,11 @@
   height: 100%;
   width: 20%;
   background-color:$bg-color;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }

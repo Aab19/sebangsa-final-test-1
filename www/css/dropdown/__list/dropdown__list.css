@@ -1,0 +1,10 @@
+/* Dropdown Button */
+.dropdown__list {
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* Dropdown button on hover & focus */
+.dropdown__list:hover, .dropdown__list:focus {
+  color: #FFF; }

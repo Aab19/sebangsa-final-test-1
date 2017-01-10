@@ -2,4 +2,10 @@
 
 .channels__team-name {
   color: $color2;
+  margin-top: 22px;
+  margin-left: 0;
+
+  :hover {
+    color: $color2;
+  }
 }

@@ -2,6 +2,13 @@
 
 .team {
   height: 100%;
-  width: 8%;
+  width: 7%;
   background-color: $bg-color2;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }

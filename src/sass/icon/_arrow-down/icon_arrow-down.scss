@@ -1,0 +1,11 @@
+@import "src/sass/variable/variable";
+
+.icon_arrow-down {
+    color: $color;
+    margin-left: 3px;
+    top: 0px;
+    font-size: 12px;
+    :hover {
+      color: $color2;
+    }
+}

@@ -1,3 +1,10 @@
 .team__item {
+<<<<<<< HEAD
   height: 100%;
   width: 15%; }
+=======
+  display: block;
+  height: 50px;
+  width: 320px;
+  margin-left: -27px; }
+>>>>>>> 2bf7b72709b4c70a6617173374784f909038d5e6

@@ -1,4 +1,14 @@
 .channels {
   height: 100%;
   width: 20%;
+<<<<<<< HEAD
   background-color: #4D394B; }
+=======
+  background-color: #4D394B;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
+>>>>>>> 2bf7b72709b4c70a6617173374784f909038d5e6

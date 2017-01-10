@@ -1,0 +1,11 @@
+@import "src/sass/variable/variable";
+
+.channels__item {
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 100px;
+
+  li:link {
+    background-color: $color-active;
+  }
+}

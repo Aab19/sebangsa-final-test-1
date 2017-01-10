@@ -1,3 +1,10 @@
 .team__thumb {
+<<<<<<< HEAD
   height: 100%;
   width: 15%; }
+=======
+  height: 90%;
+  width: 15%;
+  border-radius: 5%;
+  margin-top: 10px; }
+>>>>>>> 2bf7b72709b4c70a6617173374784f909038d5e6

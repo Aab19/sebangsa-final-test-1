@@ -25,6 +25,7 @@ gulp.task('watch', function() {
 	gulp.watch('./src/pug/*.pug', ['pug'])
 	gulp.watch('./src/sass/**/*.scss', ['sass'])
 	gulp.watch('./src/sass/**/*.js', ['js'])
+
 });
 
 gulp.task('default', ['pug', 'sass', 'js', 'watch']);
