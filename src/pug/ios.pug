@@ -1,0 +1,51 @@
+mixin team-item(link, src, alt)
+	li.team__item
+		a.team__link(href=link)
+			img.team__thumb(src=src, alt=alt)
+
+mixin channel-item(link, name)
+	li.channels__item #
+		a.channels__link(href=link)= name
+
+mixin chat-message(src, alt, time, text)
+	.chat__message
+		img.chat__thumb(src=src,alt=alt)
+		p.chat__time= time
+		p.chat__text= text
+
+doctype
+html(lang="en")
+	head
+		title Final Test - Slack Clone
+	body
+		.container
+			section.team
+				.team__wrapper //- scroll down menu
+					ul.team__list
+						+team-item('#', '#', 'Kalasan') //- action clik active class
+						+team-item('#', '#', 'Baciro')
+						+team-item('#', '#', 'Elmo')
+			section.channels
+				.channels__wrapper //- scroll down menu
+					a
+						h3.channels__team-name //- action team pop-up menu
+						a.icon.icon_arrow-down
+					p.channels_mini-team
+
+					ul.channels__list
+						a.icon.icon_plus-circle
+						+channel-item('#', 'IOS') //- action clik active class
+						+channel-item('#', 'HRD')
+			section.chat //- scroll down menu
+				.chat__wrapper
+					.chat__head
+						h2.chat__channel-name
+						a.icon.icon_star
+						p |
+						a.icon.icon_user 48
+						a.icon.icon_option-vertical.icon_right //- action click pop-up menu
+					.chat__body
+						.chat__area
+							+chat-message('#', '#', '11:13 AM', 'Hai apa kabar semua?')
+							+chat-message('#', '#', '11:13 AM', 'Baik Alhamdulillah')
+						input.chat__input.chat__input_bottom.icon.icon_plus(placeholder='tulis pesan')
