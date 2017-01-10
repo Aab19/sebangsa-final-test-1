@@ -20,6 +20,7 @@ html(lang="en")
 	head
 		title Final Test - Slack Clone
 		link(rel='stylesheet' href='css/style.css')
+		link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 	body
 		.container
 			section.team
@@ -36,11 +37,13 @@ html(lang="en")
 					a
 						// action team pop-up menu
 						h3.channels__team-name Kalasan
-						a.icon.icon_arrow-down
-					p.channels_mini-team Klanjabrik
+							a.icon.icon_arrow-down
+								i.fa.fa-caret-down
+					p.channels__mini-team Klanjabrik
 
-					ul.channels__list Channels
+					ul.channels__list Channels (3)
 						a.icon.icon_plus-circle
+							i.fa.fa-plus-circle
 						// action clik active class
 						+channel-item('#', 'IOS')
 						+channel-item('#', 'HRD')
