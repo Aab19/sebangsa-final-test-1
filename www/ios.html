@@ -4,7 +4,6 @@
     <title>Final Test - Slack Clone</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -37,8 +36,8 @@
         <div class="chat__wrapper">
           <div class="chat__head">
             <h2 class="chat__channel-name">#IOS</h2><a class="icon chat__icon" href="#"><i class="fa fa-star"> </i></a><span>|</span><a class="icon chat__icon" href="#"><i class="fa fa-user"> 48</i></a>
-            <!-- action click pop-up men--><a class="icon chat__icon chat__icon_lg chat__icon_right" href="#"><i class="fa fa-ellipsis-v"></i></a>
-            <div class="opt-overlay opt-overlay_right">
+            <!-- action click pop-up men--><a class="icon chat__icon chat__icon_lg chat__icon_right" id="opt-chat-trigger" href="#"><i class="fa fa-ellipsis-v"></i></a>
+            <div class="opt-overlay opt-overlay_right opt-overlay_show" id="opt-chat-head">
               <div class="opt-overlay__wrapper">
                 <ul class="opt-overlay__first">
                   <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">Your Files</a></li>
@@ -76,15 +75,49 @@
                   <p class="chat__text">Lancar jaya pak</p>
                 </div>
               </div>
+              <div class="chat__message"><img class="chat__thumb" src="https://api.adorable.io/avatars/60/bro.png" alt="#"/>
+                <div class="chat__textarea">
+                  <p class="chat__status"><a class="chat__username" href="#">Kljabrik </a><span class="chat__time">11:13 AM</span></p>
+                  <p class="chat__text">Hai apa kabar semua?</p>
+                </div>
+              </div>
+              <div class="chat__message"><img class="chat__thumb" src="https://api.adorable.io/avatars/60/oke.png" alt="#"/>
+                <div class="chat__textarea">
+                  <p class="chat__status"><a class="chat__username" href="#">Bro</a><span class="chat__time">11:13 AM</span></p>
+                  <p class="chat__text">Baik Alhamdulillah</p>
+                </div>
+              </div>
+              <div class="chat__message"><img class="chat__thumb" src="https://api.adorable.io/avatars/60/bro.png" alt="#"/>
+                <div class="chat__textarea">
+                  <p class="chat__status"><a class="chat__username" href="#">Kljabrik </a><span class="chat__time">11:15 AM</span></p>
+                  <p class="chat__text">Lancar yah projectnya?</p>
+                </div>
+              </div>
+              <div class="chat__message"><img class="chat__thumb" src="https://api.adorable.io/avatars/60/lancar.png" alt="#"/>
+                <div class="chat__textarea">
+                  <p class="chat__status"><a class="chat__username" href="#">Bre</a><span class="chat__time">11:14 AM</span></p>
+                  <p class="chat__text">Lancar jaya pak</p>
+                </div>
+              </div>
             </div>
           </div>
           <form class="chat__form">
-            <div class="chat__form-wrapper"><a class="chat__icon_plus" href="#"><i class="fa fa-plus"></i></a>
+            <div class="chat__form-wrapper"><a class="chat__icon_plus" id="opt-input-trigger" href="#"><i class="fa fa-plus"></i></a>
               <input class="chat__input chat__input_bottom" placeholder="Tulis Pesan">
             </div>
           </form>
+          <div class="opt-overlay opt-overlay_bottom opt-overlay_show" id="opt-input-plus">
+            <div class="opt-overlay__wrapper">
+              <ul class="opt-overlay__first">
+                <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">Google Drive</a></li>
+                <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">Your Computer</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="css/chat/__icon/chat__icon.js"></script>
   </body>
 </html>

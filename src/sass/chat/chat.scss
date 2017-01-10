@@ -3,4 +3,11 @@
 	background-color: #fefefe;
 	height: 100%;
 	border: 1px solid grayscale(#eaeaea);
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
 }

@@ -2,4 +2,10 @@
   width: 72%;
   background-color: #fefefe;
   height: 100%;
-  border: 1px solid #eaeaea; }
+  border: 1px solid #eaeaea;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
