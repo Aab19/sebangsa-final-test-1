@@ -3,7 +3,7 @@ body {
 	margin: 0;
 }
 
-
+@import "variable/variable";
 @import "channels/channels";
 @import "channels/__item/channels__item";
 @import "channels/__link/channels__link";

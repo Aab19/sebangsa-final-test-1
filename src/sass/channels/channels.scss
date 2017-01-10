@@ -1,5 +1,7 @@
+@import "src/sass/variable/variable";
+
 .channels {
-	width: 20%;
-	background-color: #4D394B;
-	height: 100%;
+  height: 100%;
+  width: 20%;
+  background-color:$bg-color2;
 }

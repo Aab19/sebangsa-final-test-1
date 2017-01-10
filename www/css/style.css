@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  margin: 0; }
+
+.channels {
+  width: 20%;
+  background-color: #4D394B;
+  height: 100%; }
+
+.chat {
+  width: 64.5%;
+  background-color: #fefefe;
+  height: 100%;
+  border: 1px solid #eaeaea; }
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 500px; }
+
+.team {
+  width: 15%;
+  background-color: black;
+  height: 100%; }
