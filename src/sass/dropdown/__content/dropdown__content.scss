@@ -5,11 +5,11 @@
     display: none;
     position: absolute;
     background-color: $color2;
-    margin-top: 80px;
+    margin-top: 95px;
     margin-left: 17px;
     border-radius: 5%;
     min-width: 225px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: $box-shadow;
 }
 
 
@@ -26,8 +26,11 @@
 .dropdown__content a:hover {
   color: $color2;
   background-color: #007ab8;
-  border-radius: 2%;
+  border-radius: 5px;
+  border-collapse: separate;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+  display:block;
+}

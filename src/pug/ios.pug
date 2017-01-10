@@ -4,8 +4,9 @@ mixin team-item(link, src, alt)
 			img.team__thumb(src=src, alt=alt)
 
 mixin channel-item(link, name)
-	li.channels__item #
-		a.channels__link(href=link)= name
+	.channels__hover
+		li.channels__item #
+			a.channels__link(href=link)= name
 
 mixin dropdown-team(link, src, alt)
 	.dropdown__wrapper
@@ -40,9 +41,29 @@ html(lang="en")
 						// action clik active class
 						+team-item('#', 'https://api.adorable.io/avatars/72/team-icon', 'Kalasan')
 						br
-						+team-item('#', 'https://api.adorable.io/avatars/72/team-icon', 'Baciro')
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon2', 'Baciro')
 						br
-						+team-item('#', 'https://api.adorable.io/avatars/72/team-icon', 'Elmo')
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
+						br
+						+team-item('#', 'https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
 			section.channels
 				// scroll down menu
 				.channels__wrapper
@@ -54,7 +75,7 @@ html(lang="en")
 							.dropdown_divider
 							+dropdown-content('#','Preferences')
 						// action team pop-up menu
-						h3.channels__team-name.dropdown_list(
+						h2.channels__team-name.dropdown_list(
 							onClick='myFunction()'
 							class='dropdown__list'
 							) Kalasan
@@ -66,8 +87,8 @@ html(lang="en")
 						a.icon.icon_plus-circle(href='#')
 							i.fa.fa-plus-circle
 						// action clik active class
-						+channel-item('#', ' IOS')
-						+channel-item('#', ' HRD')
+						+channel-item('#', 'IOS')
+						+channel-item('#', 'HRD')
 			// scroll down menu
 			section.chat
 				.chat__wrapper

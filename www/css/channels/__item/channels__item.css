@@ -1,6 +1,6 @@
 .channels__item {
   margin-left: 5px;
+  margin-top: 7px;
   width: 100px; }
-  .channels__item li:hover {
-    text-color: #AB9A9B;
-    background-color: red; }
+  .channels__item li:link {
+    background-color: #4C9689; }

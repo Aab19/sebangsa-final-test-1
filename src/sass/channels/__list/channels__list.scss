@@ -3,6 +3,13 @@
 .channels__list {
   color: $color;
   list-style: none;
-  margin-left: -24px;
+  margin-left: 8px;
   margin-top: -18px;
+  padding-left: 8px;
+  padding-right: 25px;
+
+  :hover {
+    color: $color2;
+  }
+
 }

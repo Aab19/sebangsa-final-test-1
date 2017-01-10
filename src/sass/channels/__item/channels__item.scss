@@ -2,9 +2,10 @@
 
 .channels__item {
   margin-left: 5px;
+  margin-top: 7px;
   width: 100px;
-  li:hover {
-    text-color: $color;
-    background-color: red;
+
+  li:link {
+    background-color: $color-active;
   }
 }

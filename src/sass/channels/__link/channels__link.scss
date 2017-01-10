@@ -3,9 +3,8 @@
 .channels__link {
     color: inherit;
     text-decoration: none;
-    li:hover {
-      width: 300px;
+    a:hover{
       text-color: $color;
-      background-color: $color2;
+      background-color: red;
     }
 }

@@ -1,0 +1,9 @@
+.channels__hover {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-collapse: separate; }
+  .channels__hover:active {
+    background-color: #4C9689;
+    color: #FFF; }
+  .channels__hover:hover {
+    background-color: rgba(0, 0, 0, 0.2); }

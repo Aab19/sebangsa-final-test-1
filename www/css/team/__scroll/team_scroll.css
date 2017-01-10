@@ -1,0 +1,6 @@
+.team_scroll {
+  height: 100%;
+  width: 7%;
+  background-color: black;
+  overflow-y: auto;
+  padding-right: 15px; }

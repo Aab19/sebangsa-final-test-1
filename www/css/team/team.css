@@ -1,4 +1,10 @@
 .team {
   height: 100%;
   width: 7%;
-  background-color: #120e12; }
+  background-color: #120e12;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; }
