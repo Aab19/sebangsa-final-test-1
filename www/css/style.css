@@ -130,6 +130,50 @@ span {
   height: 653px;
   width: 100%; }
 
+.opt-overlay {
+  position: fixed;
+  width: 20%; }
+
+.opt-overlay__first {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: -5px; }
+
+.opt-overlay__second {
+  width: 100%;
+  list-style: none;
+  padding-left: 0px;
+  padding-top: 10px;
+  border-top: 1px solid #efefef; }
+
+.opt-overlay__link {
+  text-decoration: none;
+  color: #000;
+  width: 100% inherit;
+  height: 20px; }
+
+.opt-overlay__link:hover {
+  color: #fff; }
+
+.opt-overlay__text {
+  width: 92%;
+  height: 20px;
+  padding: 5px 10px; }
+
+.opt-overlay__text:hover {
+  background-color: #e6e6e6; }
+
+.opt-overlay__wrapper {
+  width: 250px;
+  background-color: #fff;
+  border: 2px #efefef solid;
+  border-radius: 10px; }
+
+.opt-overlay_right {
+  right: 5px; }
+
 .team {
   height: 100%;
   width: 8%;

@@ -1,0 +1,7 @@
+.opt-overlay__text {
+  width: 92%;
+  height: 20px;
+  padding: 5px 10px; }
+
+.opt-overlay__text:hover {
+  background-color: #e6e6e6; }

@@ -9,12 +9,12 @@ mixin channel-item(link, name)
 	li.channels__item #
 		a.channels__link(href=link)= name
 
-mixin chat-message(src, alt, time, text)
+mixin chat-message(user, src, alt, time, text)
 	.chat__message
 		img.chat__thumb(src=src,alt=alt)
 		.chat__textarea
 			p.chat__status
-				a.chat__username(href='#') Kljabrik 
+				a.chat__username(href='#')= user
 				span.chat__time= time
 			p.chat__text= text
 
@@ -24,6 +24,7 @@ html(lang="en")
 		title Final Test - Slack Clone
 		link(rel="stylesheet", href="css/style.css")
 		link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
 	body
 		.container
 			section.team
@@ -62,15 +63,25 @@ html(lang="en")
 						// action click pop-up men
 						a.icon.chat__icon.chat__icon_lg.chat__icon_right(href="#")
 							i.fa.fa-ellipsis-v
+						.opt-overlay.opt-overlay_right
+							.opt-overlay__wrapper
+								ul.opt-overlay__first
+									li.opt-overlay__text
+										a.opt-overlay__link(href="#") Your Files
+									li.opt-overlay__text
+										a.opt-overlay__link(href="#") All Files
+								ul.opt-overlay__second
+									li.opt-overlay__text
+										a.opt-overlay__link(href="#") What's New?
 					.chat__body
 						.chat__area
-							+chat-message('https://api.adorable.io/avatars/60/bro.png', '#', '11:13 AM', 'Hai apa kabar semua?')
-							+chat-message('https://api.adorable.io/avatars/60/oke.png', '#', '11:13 AM', 'Baik Alhamdulillah')
-							+chat-message('https://api.adorable.io/avatars/60/bro.png', '#', '11:15 AM', 'Lancar yah projectnya?')
-							+chat-message('https://api.adorable.io/avatars/60/lancar.png', '#', '11:14 AM', 'Lancar jaya pak')
+							+chat-message('Kljabrik ', 'https://api.adorable.io/avatars/60/bro.png', '#', '11:13 AM', 'Hai apa kabar semua?')
+							+chat-message('Bro', 'https://api.adorable.io/avatars/60/oke.png', '#', '11:13 AM', 'Baik Alhamdulillah')
+							+chat-message('Kljabrik ', 'https://api.adorable.io/avatars/60/bro.png', '#', '11:15 AM', 'Lancar yah projectnya?')
+							+chat-message('Bre', 'https://api.adorable.io/avatars/60/lancar.png', '#', '11:14 AM', 'Lancar jaya pak')
 					form.chat__form
 						.chat__form-wrapper
 							a.chat__icon_plus(href="#")
 								i.fa.fa-plus
-							input.chat__input.chat__input_bottom(placeholder='tulis pesan')
+							input.chat__input.chat__input_bottom(placeholder='Tulis Pesan')
 
