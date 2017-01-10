@@ -13,9 +13,9 @@ mixin chat-message(src, alt, time, text)
 	.chat__message
 		img.chat__thumb(src=src,alt=alt)
 		.chat__textarea
-			a Kljabrik 
-			p.chat__time= time
-			
+			p.chat__status
+				a.chat__username(href='#') Kljabrik 
+				span.chat__time= time
 			p.chat__text= text
 
 doctype
@@ -66,4 +66,11 @@ html(lang="en")
 						.chat__area
 							+chat-message('https://api.adorable.io/avatars/60/bro.png', '#', '11:13 AM', 'Hai apa kabar semua?')
 							+chat-message('https://api.adorable.io/avatars/60/oke.png', '#', '11:13 AM', 'Baik Alhamdulillah')
-					input.chat__input.chat__input_bottom.icon.icon_plus(placeholder='tulis pesan')
+							+chat-message('https://api.adorable.io/avatars/60/bro.png', '#', '11:15 AM', 'Lancar yah projectnya?')
+							+chat-message('https://api.adorable.io/avatars/60/lancar.png', '#', '11:14 AM', 'Lancar jaya pak')
+					form.chat__form
+						.chat__form-wrapper
+							a.chat__icon_plus(href="#")
+								i.fa.fa-plus
+							input.chat__input.chat__input_bottom(placeholder='tulis pesan')
+
