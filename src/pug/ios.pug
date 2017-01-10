@@ -17,33 +17,41 @@ doctype
 html(lang="en")
 	head
 		title Final Test - Slack Clone
+		link(rel)
 	body
 		.container
 			section.team
-				.team__wrapper //- scroll down menu
+				//- scroll down menu
+				.team__wrapper 
 					ul.team__list
-						+team-item('#', '#', 'Kalasan') //- action clik active class
+						//- action clik active class
+						+team-item('#', '#', 'Kalasan') 
 						+team-item('#', '#', 'Baciro')
 						+team-item('#', '#', 'Elmo')
 			section.channels
-				.channels__wrapper //- scroll down menu
+				//- scroll down menu
+				.channels__wrapper 
 					a
-						h3.channels__team-name //- action team pop-up menu
+						//- action team pop-up menu
+						h3.channels__team-name 
 						a.icon.icon_arrow-down
 					p.channels_mini-team
 
 					ul.channels__list
+						//- action clik active class
 						a.icon.icon_plus-circle
-						+channel-item('#', 'IOS') //- action clik active class
+						+channel-item('#', 'IOS') 
 						+channel-item('#', 'HRD')
-			section.chat //- scroll down menu
+			//- scroll down menu
+			section.chat 
 				.chat__wrapper
 					.chat__head
 						h2.chat__channel-name
 						a.icon.icon_star
 						p |
 						a.icon.icon_user 48
-						a.icon.icon_option-vertical.icon_right //- action click pop-up menu
+						//- action click pop-up menu
+						a.icon.icon_option-vertical.icon_right 
 					.chat__body
 						.chat__area
 							+chat-message('#', '#', '11:13 AM', 'Hai apa kabar semua?')
