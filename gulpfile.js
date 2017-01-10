@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var pug = require('gulp-pug');
 var sass = require('gulp-sass');
-var image = require('gulp-css-image-dimensions');
 
 gulp.task('pug', function() {
 	gulp.src('./src/pug/*.pug')
@@ -13,14 +12,19 @@ gulp.task('pug', function() {
 
 gulp.task('sass', function() {
 	gulp.src('./src/sass/**/*.scss')
-	.pipe(image('.'))
 	.pipe(sass())
+	.pipe(gulp.dest('./www/css'))
+});
+
+gulp.task('js', function() {
+	gulp.src('./src/sass/**/*.js')
 	.pipe(gulp.dest('./www/css'))
 });
 
 gulp.task('watch', function() {
 	gulp.watch('./src/pug/*.pug', ['pug'])
 	gulp.watch('./src/sass/**/*.scss', ['sass'])
+	gulp.watch('.src/sass/**/*scss',['js'])
 });
 
-gulp.task('default', ['pug', 'sass', 'watch']);
+gulp.task('default', ['pug', 'sass', 'js', 'watch']);
