@@ -1,0 +1,42 @@
+mixin team-item(link, src, alt)
+	li.team__item
+		a.team__link(href=link)
+			img.team__thumb(src=src, alt=alt)
+	br
+	
+
+mixin tim(tim, user)
+	h2.channels__team-name.dropdown_list(
+		onClick='myFunction()'
+		class='dropdown__list'
+		) #{tim}
+		a.icon.icon_arrow-down
+			i.fa.fa-caret-down
+		p.channels__mini-team= user
+
+mixin channel-item(link, name, webTitle)
+	.channels__hover
+		if (webTitle == name)
+			- var active = 'active'
+			li(class='channels__item') #
+				a(href=link, class="channels__link", class=active)= name
+			='\n'
+
+mixin dropdown-team(link, src, alt, tim, user)
+	.dropdown__wrapper
+		img.dropdown__thumb(src=src, alt=alt)
+		.dropdown__user
+			p= tim
+			p.dropdown__name= user
+
+mixin dropdown-content(link, list)
+		a(href=link, class='dropdown_center')= list
+
+mixin chat-message(user, src, alt, time, text)
+	.chat__message
+		img.chat__thumb(src=src,alt=alt)
+		.chat__textarea
+			p.chat__status
+				a.chat__username(href='#')= user
+				span.chat__time= time
+			p.chat__text= text

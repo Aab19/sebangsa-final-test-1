@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="css/dropdown/__id/dropdown__id.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="team">
+        <div class="team__wrapper">
+          <ul class="team__list">
+          </ul>
+        </div>
+      </section>
+      <section class="channels">
+        <!-- scroll down menu-->
+        <div class="channels__wrapper">
+          <div class="dropdown">
+            <!-- action team pop-up menu-->
+          </div>
+          <ul class="channels__list">Channels (3)<a class="icon icon_plus-circle" href="#"><i class="fa fa-plus-circle"></i></a>
+            <!-- action clik active class-->
+          </ul>
+        </div>
+      </section>
+      <!-- scroll down menu-->
+      <section class="chat">
+        <div class="chat__wrapper">
+          <div class="chat__head">
+            <h2 class="chat__channel-name">#undefined</h2><a class="icon chat__icon" href="#"><i class="fa fa-star"> </i></a><span>|</span><a class="icon chat__icon" href="#"><i class="fa fa-user"> 48</i></a>
+            <!-- action click pop-up men--><a class="icon chat__icon chat__icon_lg chat__icon_right" id="opt-chat-trigger" href="#"><i class="fa fa-ellipsis-v"></i></a>
+            <div class="opt-overlay opt-overlay_right opt-overlay_show" id="opt-chat-head">
+              <div class="opt-overlay__wrapper">
+                <ul class="opt-overlay__first">
+                  <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">Your Files</a></li>
+                  <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">All Files</a></li>
+                </ul>
+                <ul class="opt-overlay__second">
+                  <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">What's New?</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="chat__body">
+            <div class="chat__area">
+            </div>
+          </div>
+          <form class="chat__form">
+            <div class="chat__form-wrapper"><a class="chat__icon_plus" id="opt-input-trigger" href="#"><i class="fa fa-plus"></i></a>
+              <input class="chat__input chat__input_bottom" placeholder="Tulis Pesan">
+            </div>
+          </form>
+          <div class="opt-overlay opt-overlay_bottom opt-overlay_show" id="opt-input-plus">
+            <div class="opt-overlay__wrapper">
+              <ul class="opt-overlay__first">
+                <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">Google Drive</a></li>
+                <li class="opt-overlay__text"><a class="opt-overlay__link" href="#">Your Computer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="css/chat/__icon/chat__icon.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+include config
+include mixin
+
+block config
+doctype
+html(lang="en")
+	head
+		block title
+			title= webTitle
+		meta(charset='utf-8')
+		link(rel='stylesheet' href='css/style.css')
+		link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		script(src='css/dropdown/__id/dropdown__id.js')
+	body
+		.container
+			section.team
+				.team__wrapper
+					ul.team__list
+						block team-list
+
+			section.channels
+				// scroll down menu
+				.channels__wrapper
+					.dropdown
+						block dropdown-team
+						// action team pop-up menu
+						block mixin-tim
+
+					ul.channels__list Channels (3)
+						a.icon.icon_plus-circle(href='#')
+							i.fa.fa-plus-circle
+						// action clik active class
+						block channels-item
+						
+			// scroll down menu
+			section.chat
+				.chat__wrapper
+					.chat__head
+						h2.chat__channel-name= '\#'+webTitle
+						a.icon.chat__icon(href="#")
+							i.fa.fa-star  
+						span |
+						a.icon.chat__icon(href="#")
+							i.fa.fa-user  48
+						// action click pop-up men
+						a#opt-chat-trigger.icon.chat__icon.chat__icon_lg.chat__icon_right(href="#")
+							i.fa.fa-ellipsis-v
+						#opt-chat-head.opt-overlay.opt-overlay_right.opt-overlay_show
+							.opt-overlay__wrapper
+								ul.opt-overlay__first
+									li.opt-overlay__text
+										a.opt-overlay__link(href="#") Your Files
+									li.opt-overlay__text
+										a.opt-overlay__link(href="#") All Files
+								ul.opt-overlay__second
+									li.opt-overlay__text
+										a.opt-overlay__link(href="#") What's New?
+					.chat__body
+						.chat__area
+							block chat-area
+							
+					form.chat__form
+						.chat__form-wrapper
+							a#opt-input-trigger.chat__icon_plus(href="#")
+								i.fa.fa-plus
+							input.chat__input.chat__input_bottom(placeholder='Tulis Pesan')
+					#opt-input-plus.opt-overlay.opt-overlay_bottom.opt-overlay_show
+						.opt-overlay__wrapper
+							ul.opt-overlay__first
+								li.opt-overlay__text
+									a.opt-overlay__link(href="#") Google Drive
+								li.opt-overlay__text
+									a.opt-overlay__link(href="#") Your Computer
+
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		script(src='css/chat/__icon/chat__icon.js')

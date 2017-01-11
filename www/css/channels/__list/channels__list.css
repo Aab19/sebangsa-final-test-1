@@ -1,7 +1,4 @@
 .channels__list {
-<<<<<<< HEAD
-  color: #AB9A9B; }
-=======
   color: #AB9A9B;
   list-style: none;
   margin-left: 8px;
@@ -10,4 +7,3 @@
   padding-right: 25px; }
   .channels__list :hover {
     color: #FFF; }
->>>>>>> 2bf7b72709b4c70a6617173374784f909038d5e6

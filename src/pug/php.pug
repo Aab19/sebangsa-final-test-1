@@ -1,7 +1,7 @@
 extends layout
 
 block config
-	- var webTitle = 'IOS'
+	- var webTitle = 'PHP'
 block title
 	title= webTitle
 block team-list
@@ -11,18 +11,18 @@ block team-list
 
 	block dropdown-team
 		#dropdown__id.dropdown__content
-			+dropdown-team('#', 'https://api.adorable.io/avatars/72/team-icon', 'Kalasan','Kalasan','@klanjabrik')
+			+dropdown-team('#', 'https://api.adorable.io/avatars/72/team-icon', 'Elmo','Elmo','@klanjabrik')
 			+dropdown-content('#','Profil & Account')
 			+dropdown-content('#','Preferences')
 			.dropdown_divider
 			+dropdown-content('#','Preferences')
 
 block mixin-tim
-	+tim('Kalasan','Klanjabrik')
+	+tim('Elmo','Klanjabrik')
 
 block channels-item
-	+channel-item('ios.html', 'IOS', 'IOS')
-	+channel-item('hrd.html', 'HRD', 'HRD')
+	+channel-item('php.html', 'PHP', 'PHP')
+	+channel-item('designelmo.html', 'DesignElmo', 'DesignElmo')
 
 block chat-area
 	+chat-message('Kljabrik ', 'https://api.adorable.io/avatars/60/bro.png', '#', '11:13 AM', 'Hai apa kabar semua?')
