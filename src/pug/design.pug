@@ -9,13 +9,13 @@ block team-list
 	+team-item('devops.html','https://api.adorable.io/avatars/285/team-icon2', 'Baciro')
 	+team-item('php.html','https://api.adorable.io/avatars/285/team-icon3', 'Elmo')
 
-	block dropdown-team
-		#dropdown__id.dropdown__content
-			+dropdown-team('#', 'https://api.adorable.io/avatars/72/team-icon', 'Baciro','Baciro','@klanjabrik')
-			+dropdown-content('#','Profil & Account')
-			+dropdown-content('#','Preferences')
-			.dropdown_divider
-			+dropdown-content('#','Preferences')
+block dropdown-team
+	#dropdown__id.dropdown__content
+		+dropdown-team('#', 'https://api.adorable.io/avatars/72/team-icon', 'Baciro','Baciro','@klanjabrik')
+		+dropdown-content('#','Profil & Account')
+		+dropdown-content('#','Preferences')
+		.dropdown_divider
+		+dropdown-content('#','Preferences')
 
 block mixin-tim
 	+tim('Baciro','Klanjabrik')
